@@ -5,7 +5,7 @@ Callisto is a content focused responsive theme for [Ghost](http://github.com/try
 ## Demo
 
 * [Blog](http://jackyeh.me/)
-* [Post](http://jackyeh.me/why-you-should-write-today/
+* [Post](http://jackyeh.me/why-you-should-write-today/)
 
 ## Copyright & License
 
