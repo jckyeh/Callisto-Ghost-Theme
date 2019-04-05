@@ -1,0 +1,31 @@
+{
+  "name": "callisto",
+  "version": "1.0.6",
+  "description": "Minimal personal theme for writers, designers, and creatives",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "ghost-theme",
+    "callisto"
+  ],
+  "author": {
+    "name": "Jack Yeh",
+    "email": "jack@jackyeh.me",
+    "url": "http://jackyeh.me"
+  },
+  "gpm": {
+    "type": "theme",
+    "categories": [
+      "Minimal",
+      "Personal Blogs"
+    ]
+  },
+  "license": "ISC",
+  "config": {
+    "posts_per_page": 10
+  }
+}

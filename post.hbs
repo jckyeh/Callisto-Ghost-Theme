@@ -1,0 +1,66 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+{{> header}}
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+
+<main class="main_minimal" role="main">
+    <article class="article__wrapper" role="article">
+
+        <header>
+            <h1 class="post__title">{{title}}</h1>
+            <time class="date" datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>
+        </header>
+
+        <section class="post__content-wrapper">
+            <div class="post__content">
+                {{content}}
+            </div>
+        </section>
+
+        {{!-- {{#if tags}}
+            <div class="posttags_uber">
+                Tags: {{tags separator=" | "}}
+            </div>
+        {{/if}} --}}
+
+        {{!-- <footer>
+            <h4>Share</h4>
+            <a class="icon-twitter" target="_blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"><span class="hideThis_minimal">Twitter</span></a>
+            <a class="icon-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"><span class="hideThis_minimal">Facebook</span></a>
+        </footer> --}}
+
+    </article>
+
+    <nav class="post__footer" role="navigation">
+        <div class="footer__wrapper">
+            <div class="footer__wrapper-inner">
+                
+                <div class="footer__link-prev">
+                {{#prev_post in="primary_tag"}}
+                    <a href="{{url}}" rel="prev">
+                        <p class="footer__link-label">Previous</p>
+                        <h3 class="footer__title-article">{{title}}</h3>
+                    </a>
+                {{/prev_post}}
+                </div>
+
+                {{#next_post in="primary_tag"}}
+                <div class="footer__link-next">
+                    <a href="{{url}}" rel="next">
+                        <p class="footer__link-label">Next</p>
+                        <h3 class="footer__title-article">{{title}}</h3>
+                    </a>
+                </div>
+                {{/next_post}}
+
+            </div>
+        </div>
+    </nav>
+</main>
+
+{{/post}}
+
+{{> footer}}

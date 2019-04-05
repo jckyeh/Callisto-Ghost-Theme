@@ -1,0 +1,356 @@
+/* 1. Global - Set up the things
+/* ---------------------------------------------------------- */
+
+/* @import "global.css"; */
+
+
+/* 2. Layout - Page building blocks
+/* ---------------------------------------------------------- */
+
+.wrapper_minimal {
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 2em;
+}
+/* @media (max-width: 500px) {
+    .wrapper_minimal {
+        padding: 0 4vw;
+    }
+} */
+
+.main_minimal {
+    flex: 1 1 auto;
+    align-items: center;
+}
+
+/* 4. Site Header & Navigation
+/* ---------------------------------------------------------- */
+.header {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    margin-bottom: 4rem;
+    padding: 1.2rem 0 2rem;
+    width: 100%;
+}
+.header__title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+}
+.header__title a {
+    color: #1c2437;
+    /* font-weight: bold; */
+    font-family: 'Playfair Display', serif;
+}
+.header__nav {
+    display: flex;
+    margin-left: auto;
+    /* justify-content: space-between; */
+    width: auto;
+}
+.header__link {
+    margin-left: 2.4rem;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.54);
+    transition: color .4s ease-in-out;
+}
+@media (max-width: 500px) {
+    .header__link {
+        margin-left: 1.2rem;
+    }
+}
+
+.header__link:hover {
+    color: rgba(0, 0, 0, 0.84);
+}
+
+/* 6. Post Feed
+/* ---------------------------------------------------------- */
+
+.card {
+    margin: 0 0 4rem;
+    display: flex;
+}
+@media (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        /* margin: 0 0 4rem; */
+    }
+}
+
+.card__content {
+    width: 100%;
+}
+.card__title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+}
+.card__title a {
+    color: #1c2437;
+}
+.card__desc {
+    margin: 0.4rem 0 0.4em;
+    line-height: 1.5;
+}
+.card__desc a {
+    color: rgba(0, 0, 0, 0.5);
+}
+.date {
+    display: block;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.78);
+    /* margin: 0.3rem 0; */
+}
+
+.card__img-wrapper {
+    margin-left: 2rem;
+}
+.card__img {
+    width: 12rem;
+}
+@media (max-width: 500px) {
+    .card__img-wrapper {
+        margin: 0;
+        order: -1;
+    }
+    .card__img {
+        width: 100%;
+    }
+}
+
+/* 7. Project Feed
+/* ---------------------------------------------------------- */
+
+.card__project {
+    margin: 0rem 0 10rem;
+}
+.card__hero-wrapper {
+    margin: 0 0 1.5rem;
+}
+.card__hero-img {
+    width: 100%;
+}
+.card__desc-project {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-top: 0.4em;
+}
+.card__desc-project a {
+    color: #8a8e99;
+}
+
+/* 7. Post
+/* ---------------------------------------------------------- */
+
+.article__wrapper {
+    /* margin-top: 2rem; */
+}
+.post__title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 0 0 0.3em;
+}
+
+.post__content-wrapper {
+    margin: 2rem 0 5rem;
+}
+.post__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post__content > * {
+    min-width: 100%;
+    max-width: 100%;
+    /* box-sizing: border-box; */
+}
+.post__content a {
+    /* box-shadow: #1c2437 0px -0.5px 0px inset; */
+    box-shadow: inset 0px -0.5px 0px rgba(0,0,0,.64);
+    -webkit-appearance: none;
+    -webkit-box-shadow: inset 0px -1px 0px rgba(0,0,0,.64);
+    -moz-box-shadow: inset 0px -1px 0px rgba(0,0,0,.64);
+}
+
+/* IMG */
+.post__content figure {
+    margin: 1em 0 2em;
+}
+.post__content figcaption {
+    font-size: 0.8rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.68);
+}
+.post__content img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+.kg-image-card.kg-width-wide {
+    min-width: 100%;
+    max-width: 65vw;
+    width: 65vw;
+}
+.kg-image-card.kg-width-full {
+    min-width: 100%;
+    max-width: 100vw;
+    width: 100vw;
+}
+
+/* GALLERY */
+.kg-gallery-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.kg-gallery-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.kg-gallery-card {
+    min-width: 100%;
+    max-width: 65vw;
+    width: 65vw;
+}
+
+.kg-gallery-image img {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.kg-gallery-row:not(:first-of-type) {
+    margin: 0.75em 0 0 0;
+}
+
+.kg-gallery-image:not(:first-of-type) {
+    margin: 0 0 0 0.75em;
+}
+
+/* CODE */
+.post__content pre {
+    overflow-x: auto;
+    margin: 0 0 2em;
+    padding: 20px;
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.4em;
+    background: rgba(0,0,0,.05);
+    /* border-radius: 5px; */
+}
+.post__content pre code {
+    background: transparent;
+}
+.post__content code {
+    padding: 0 5px 2px;
+    font-size: 1rem;
+    font-weight: 400!important;
+    background: rgba(0,0,0,.05);
+    border-radius: 3px;
+}
+
+.post__footer {
+    background-color: var(--whitegrey);
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+.footer__wrapper {
+    width: 100%;
+}
+.footer__wrapper-inner {
+    display: flex;
+    padding: 7em 2em;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.footer__link-label {
+    margin: 0;
+    text-transform: uppercase;
+    /* font-size: 0.8rem; */
+    color: rgba(0, 0, 0, 0.28);
+    font-weight: 600;
+}
+.footer__left-link,
+.footer__link-prev {
+    width: 50%;
+}
+.footer__link-next {
+    width: 50%;
+    text-align: right;
+    float: right;
+}
+.footer__title-article {
+    margin: 0.2em 0 0 0;
+}
+@media (max-width: 500px) {
+    .footer__wrapper-inner {
+        flex-direction: column;
+        padding: 4em 2em;
+    }
+    .footer__link-prev,
+    .footer__link-next {
+        width: 100%;
+        text-align: left;
+    }
+    .footer__wrapper-inner div:nth-child(2) {
+        margin-top: 3em;
+    }
+}
+
+/* VIDEO */
+.kg-card.kg-embed-card {
+    padding-top: 56.25%;
+    position: relative;
+    width: 100%;
+}
+.kg-card.kg-embed-card iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* 10. Pagination
+/* ---------------------------------------------------------- */
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em 0 4em;
+}
+.pagination__link {
+    display: block;
+    color: #1c2437;
+    width: 100%;
+    transition: color .4s ease-in-out;
+}
+.pagination__link:hover {
+    color: #8a8e99;
+}
+.pagination__link-prev {
+    text-align: right;
+}
+
+
+/* 11. Site Footer
+/* ---------------------------------------------------------- */
+
+.footer {
+    padding: 2rem 0;
+    color: #8a8e99;
+    font-size: .85rem;
+    flex: 0 0 auto;
+}
+.footer a {
+    color: #8a8e99
+}
