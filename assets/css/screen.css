@@ -185,6 +185,7 @@
 }
 .post__content figcaption {
     font-size: 0.8rem;
+    margin-top: 0.8em;
     text-align: center;
     color: rgba(0, 0, 0, 0.68);
 }
@@ -307,18 +308,26 @@
 }
 
 /* VIDEO */
-.kg-card.kg-embed-card {
+.kg-embed-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    height: 100%;
+}
+
+/* .kg-card.kg-embed-card {
     padding-top: 56.25%;
     position: relative;
     width: 100%;
-}
-.kg-card.kg-embed-card iframe {
+} */
+/* .kg-card.kg-embed-card iframe {
     height: 100%;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
-}
+} */
 
 /* 10. Pagination
 /* ---------------------------------------------------------- */

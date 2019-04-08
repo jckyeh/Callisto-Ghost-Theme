@@ -92,6 +92,15 @@ a:hover {
   /* color: #03a6ff; */
 }
 
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
 p,
 ul,
 ol,
