@@ -13,7 +13,7 @@
     flex-direction: column;
     height: 100vh;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 700px;
     padding: 0 2em;
 }
 /* @media (max-width: 500px) {
@@ -56,6 +56,7 @@
 }
 .header__link {
     margin-left: 2.4rem;
+    font-family: 'Avenir';
     font-size: 1rem;
     color: rgba(0, 0, 0, 0.54);
     transition: color .4s ease-in-out;
@@ -88,24 +89,28 @@
     width: 100%;
 }
 .card__title {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: bold;
     margin: 0;
 }
 .card__title a {
+    font-family: 'Avenir';
     color: #1c2437;
 }
 .card__desc {
     margin: 0.4rem 0 0.4em;
-    line-height: 1.5;
+    line-height: 1.38;
+    font-size: 1rem;
 }
 .card__desc a {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.68);
+    font-family: 'Avenir';
 }
 .date {
     display: block;
+    font-family: 'Avenir';
     font-size: 0.8rem;
-    color: rgba(0, 0, 0, 0.78);
+    color: rgba(0, 0, 0, 0.58);
     /* margin: 0.3rem 0; */
 }
 
@@ -113,7 +118,7 @@
     margin-left: 2rem;
 }
 .card__img {
-    width: 12rem;
+    width: 10rem;
 }
 @media (max-width: 500px) {
     .card__img-wrapper {
@@ -138,7 +143,6 @@
     width: 100%;
 }
 .card__desc-project {
-    font-size: 1.3rem;
     line-height: 1.4;
     margin-top: 0.4em;
 }
@@ -153,13 +157,14 @@
     /* margin-top: 2rem; */
 }
 .post__title {
-    font-size: 2.4rem;
+    /* font-family: 'Avenir'; */
+    font-size: 2.5rem;
     font-weight: bold;
-    margin: 0 0 0.3em;
+    margin: 0;
 }
 
 .post__content-wrapper {
-    margin: 2rem 0 5rem;
+    margin: 1.5rem 0 5rem;
 }
 .post__content {
     display: flex;
@@ -173,10 +178,12 @@
 }
 .post__content a {
     /* box-shadow: #1c2437 0px -0.5px 0px inset; */
-    box-shadow: inset 0px -0.5px 0px rgba(0,0,0,.64);
+    /* color: rgba(0, 0, 0, 0.28) */
+
+    box-shadow: inset 0px -0.5px 0px rgba(0,0,0,.3);
     -webkit-appearance: none;
-    -webkit-box-shadow: inset 0px -1px 0px rgba(0,0,0,.64);
-    -moz-box-shadow: inset 0px -1px 0px rgba(0,0,0,.64);
+    -webkit-box-shadow: inset 0px -1px 0px rgba(0,0,0,.3);
+    -moz-box-shadow: inset 0px -1px 0px rgba(0,0,0,.3);
 }
 
 /* IMG */
@@ -271,12 +278,14 @@
     display: flex;
     padding: 7em 2em;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 700px;
 }
 .footer__link-label {
     margin: 0;
     text-transform: uppercase;
-    /* font-size: 0.8rem; */
+    letter-spacing: 0.05em;
+    font-family: 'Avenir';
+    font-size: 0.8rem;
     color: rgba(0, 0, 0, 0.28);
     font-weight: 600;
 }
@@ -291,6 +300,9 @@
 }
 .footer__title-article {
     margin: 0.2em 0 0 0;
+    font-family: 'Avenir';
+    font-size: 1.1em;
+    font-weight: 600;
 }
 @media (max-width: 500px) {
     .footer__wrapper-inner {
@@ -360,6 +372,10 @@
     font-size: .85rem;
     flex: 0 0 auto;
 }
+.footer div {
+    font-family: 'Avenir';
+}
 .footer a {
-    color: #8a8e99
+    color: #8a8e99;
+    font-family: 'Avenir';
 }

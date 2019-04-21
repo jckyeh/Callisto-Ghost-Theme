@@ -30,7 +30,6 @@ summary, time, mark, audio, video {
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   font-kerning: auto;
-  font-family: 'Open Sans', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -38,8 +37,6 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
-  line-height: 2;
-  /* font-size: 16px; */
   color: var(--darkgrey);
 }
 /* ol, ul {
@@ -58,10 +55,12 @@ table {
   border-spacing: 0;
 }
 strong, b {
-  font-weight: bold;
+  font-family: 'charterbold';
+  /* font-weight: bold; */
 }
 em, i {
-  font-style: italic;
+  font-family: 'charteritalic';
+  /* font-style: italic; */
 }
 a img {
   border: none;
@@ -105,7 +104,7 @@ p,
 ul,
 ol,
 dl {
-    margin: 0 0 1.5em 0;
+    margin: 0 0 1.3em 0;
 }
 
 ol,
@@ -135,10 +134,21 @@ li {
 }
 
 blockquote {
-  margin: 0 0 1.5em -1.4em;
-  padding: 0 0 0 1em;
+  margin-bottom: 1.5em;
+  /* margin: 0 0 1.5em -1.4em; */
+  padding: 0 1.4rem;
+  box-sizing: border-box;
   /* border-left: 0.15em solid; */
-  font-style: italic;
+  /* font-style: italic; */
+}
+
+blockquote,
+blockquote em,
+blockquote strong {
+  font-family: 'charteritalic';
+  /* font-size: 1.25rem; */
+  /* line-height: 1.35; */
+  /* color: rgba(0,0,0,.64); */
 }
 
 h1,
@@ -148,27 +158,29 @@ h4,
 h5,
 h6 {
     /* line-height: 1.15; */
-    font-weight: 600;
+    /* font-weight: 600; */
     text-rendering: optimizeLegibility;
     line-height: 1.25;
-    margin: 1.2em 0 0.6em 0;
+    margin: 0.6em 0 0.4em 0;
+    font-family: 'charterbold';
+    font-weight: 600;
     /* font-family: 'Playfair Display', serif; */
 }
 
 h1 {
   /* margin: 1.5em 0 0.6em 0; */
-  font-size: 2rem;
+  font-size: 1.6rem;
   /* line-height: 1.25; */
 }
 
 h2 {
   /* margin: 1.5em 0 0.5em 0; */
-  font-size: 1.6rem;
+  font-size: 1.45rem;
 }
 
 h3 {
   /* margin: 0.2em 0 0 0; */
-  font-size: 1.2rem;
+  font-size: 1.35rem;
 }
 
 hr {
@@ -180,4 +192,10 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+body {
+  font-size: 1.3em;
+  line-height: 1.45;
+  color: rgba(0,0,0,.84)
 }
