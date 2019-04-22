@@ -204,3 +204,19 @@ body {
   line-height: 1.6;
   color: rgba(0,0,0,.84)
 }
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.34rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+}

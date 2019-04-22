@@ -16,11 +16,11 @@
     max-width: 700px;
     padding: 0 2em;
 }
-/* @media (max-width: 500px) {
+@media (max-width: 500px) {
     .wrapper_minimal {
         padding: 0 4vw;
     }
-} */
+}
 
 .main_minimal {
     flex: 1 1 auto;
@@ -37,6 +37,11 @@
     margin-bottom: 4rem;
     padding: 1.2rem 0 2rem;
     width: 100%;
+}
+@media (max-width: 500px) {
+    .header {
+        margin-bottom: 0.2rem;
+    }
 }
 .header__title {
     font-size: 1.4rem;
@@ -161,6 +166,11 @@
     font-weight: bold;
     margin: 0;
 }
+@media (max-width: 500px) {
+    .post__title {
+      font-size: 1.6rem;
+    }
+  }
 
 .post__content-wrapper {
     margin: 1.6rem 0 5rem;
