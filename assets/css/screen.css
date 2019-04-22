@@ -44,14 +44,16 @@
     }
 }
 .header__title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin: 0;
 }
 .header__title a {
     color: #1c2437;
     /* font-weight: bold; */
-    font-family: 'Playfair Display', serif;
+    font-family: 'Source Serif Pro', serif;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 0.02rem; */
 }
 .header__nav {
     display: flex;
@@ -60,11 +62,13 @@
     width: auto;
 }
 .header__link {
-    margin-left: 2.4rem;
-    font-family: 'Avenir';
+    margin-left: 1.8rem;
+    font-family: 'Avenir', 'Open Sans', sans-serif;
     font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 0.4rem;
     color: rgba(0, 0, 0, 0.54);
-    transition: color .4s ease-in-out;
+    /* transition: background .2s ease-in-out; */
 }
 @media (max-width: 500px) {
     .header__link {
@@ -73,7 +77,10 @@
 }
 
 .header__link:hover {
-    color: rgba(0, 0, 0, 0.84);
+    /* color: rgba(0, 0, 0, 0.54); */
+    background: #fffbbe;
+    transition: background .2s ease-in-out;
+    border-radius: 8px;
 }
 
 /* 6. Post Feed
@@ -94,22 +101,22 @@
     width: 100%;
 }
 .card__title {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: bold;
     margin: 0;
 }
 .card__title a {
-    font-family: 'Avenir';
+    /* font-family: 'Avenir'; */
     color: #1c2437;
 }
 .card__desc {
     margin: 0.4rem 0 0.4em;
-    line-height: 1.38;
-    font-size: 1rem;
+    line-height: 1.45;
+    font-size: 1.1rem;
 }
 .card__desc a {
-    color: rgba(0, 0, 0, 0.68);
-    font-family: 'Avenir';
+    color: rgba(0, 0, 0, 0.78);
+    /* font-family: 'Avenir'; */
 }
 .date {
     display: block;
@@ -153,6 +160,7 @@
 }
 .card__desc-project a {
     color: #8a8e99;
+    /* font-family: 'Avenir', 'Open Sans', serif; */
 }
 
 /* 7. Post
@@ -173,7 +181,7 @@
   }
 
 .post__content-wrapper {
-    margin: 1.6rem 0 5rem;
+    margin: 3.2rem 0 5rem;
 }
 .post__content {
     display: flex;
@@ -183,7 +191,14 @@
 .post__content > * {
     min-width: 100%;
     max-width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
     /* box-sizing: border-box; */
+}
+.post__content h1 {
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
 }
 .post__content a {
     /* box-shadow: #1c2437 0px -0.5px 0px inset; */
@@ -290,6 +305,7 @@
     max-width: 700px;
 }
 .footer__link-label {
+    font-family: 'Avenir', 'Open Sans', sans-serif;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -310,6 +326,7 @@
     margin: 0.2em 0 0 0;
     font-size: 1.1em;
     font-weight: 600;
+    font-family: 'Avenir', 'Open Sans', sans-serif;
 }
 @media (max-width: 500px) {
     .footer__wrapper-inner {
@@ -360,7 +377,7 @@
     display: block;
     color: #1c2437;
     width: 100%;
-    transition: color .4s ease-in-out;
+    transition: color .2s ease-in-out;
 }
 .pagination__link:hover {
     color: #8a8e99;
@@ -379,7 +396,8 @@
     font-size: .85rem;
     flex: 0 0 auto;
 }
+.footer div,
 .footer a {
     color: #8a8e99;
-    font-family: 'Avenir';
+    font-family: 'Avenir', 'Open Sans', serif;
 }

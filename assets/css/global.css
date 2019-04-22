@@ -29,11 +29,9 @@ summary, time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
-  /* text-align: justify; */
-  /* text-justify: inter-word; */
-  /* hyphens: auto; */
   font-kerning: auto;
-  font-family: 'Avenir', 'Open Sans', sans-serif;
+  /* font-family: 'Avenir', 'Open Sans', sans-serif; */
+  font-family: 'Charter', 'Source Serif Pro', serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -166,7 +164,7 @@ h6 {
     /* font-weight: 600; */
     text-rendering: optimizeLegibility;
     line-height: 1.25;
-    margin: 0.6em 0 0.4em 0;
+    margin: 0.6em 0 0.7em 0;
     /* font-family: 'charterbold'; */
     font-weight: 600;
     /* font-family: 'Avenir'; */
@@ -174,18 +172,21 @@ h6 {
 
 h1 {
   /* margin: 1.5em 0 0.6em 0; */
-  font-size: 1.6rem;
+  font-size: 1.45rem;
+  /* font-family: 'charterbold'; */
   /* line-height: 1.25; */
 }
 
 h2 {
   /* margin: 1.5em 0 0.5em 0; */
-  font-size: 1.45rem;
+  font-size: 1.3rem;
+  /* font-family: 'charterbold'; */
 }
 
 h3 {
   /* margin: 0.2em 0 0 0; */
   font-size: 1.24rem;
+  /* font-family: 'charterbold'; */
 }
 
 hr {
@@ -201,8 +202,8 @@ hr {
 
 body {
   font-size: 1.24rem;
-  line-height: 1.6;
-  color: rgba(0,0,0,.84)
+  line-height: 1.45;
+  color: rgba(0,0,0,.84);
 }
 
 @media (max-width: 500px) {
@@ -210,13 +211,13 @@ body {
     font-size: 1.34rem;
   }
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.14rem;
   }
   h3 {
-    font-size: 1rem;
+    font-size: 1.14rem;
   }
   body {
-    font-size: 1rem;
-    line-height: 1.45;
+    font-size: 1.14rem;
+    line-height: 1.54;
   }
 }
