@@ -62,7 +62,7 @@
     width: auto;
 }
 .header__link {
-    margin-left: 1.8rem;
+    margin-left: 1.6rem;
     font-family: 'Avenir', 'Open Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
@@ -77,8 +77,8 @@
 }
 
 .header__link:hover {
-    /* color: rgba(0, 0, 0, 0.54); */
-    background: #fffbbe;
+    color: rgba(0, 0, 0, 0.84);
+    background: #FFEA00;
     transition: background .2s ease-in-out;
     border-radius: 8px;
 }
@@ -101,7 +101,7 @@
     width: 100%;
 }
 .card__title {
-    font-size: 1.6rem;
+    font-size: 1.45rem;
     font-weight: bold;
     margin: 0;
 }
@@ -112,10 +112,10 @@
 .card__desc {
     margin: 0.4rem 0 0.4em;
     line-height: 1.45;
-    font-size: 1.1rem;
+    font-size: 1.06rem;
 }
 .card__desc a {
-    color: rgba(0, 0, 0, 0.78);
+    color: rgba(0, 0, 0, 0.6);
     /* font-family: 'Avenir'; */
 }
 .date {
@@ -324,9 +324,9 @@
 }
 .footer__title-article {
     margin: 0.2em 0 0 0;
-    font-size: 1.1em;
+    font-size: 1.28em;
     font-weight: 600;
-    font-family: 'Avenir', 'Open Sans', sans-serif;
+    /* font-family: 'Avenir', 'Open Sans', sans-serif; */
 }
 @media (max-width: 500px) {
     .footer__wrapper-inner {
