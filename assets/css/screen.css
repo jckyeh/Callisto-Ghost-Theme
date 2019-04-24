@@ -62,12 +62,12 @@
     width: auto;
 }
 .header__link {
-    margin-left: 1.6rem;
+    margin-left: 2.1rem;
     font-family: 'Avenir', 'Open Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    padding: 0 0.4rem;
-    color: rgba(0, 0, 0, 0.54);
+    padding: 0;
+    color: rgba(0, 0, 0, 0.7);
     /* transition: background .2s ease-in-out; */
 }
 @media (max-width: 500px) {
@@ -77,10 +77,11 @@
 }
 
 .header__link:hover {
-    color: rgba(0, 0, 0, 0.84);
-    background: #FFEA00;
-    transition: background .2s ease-in-out;
-    border-radius: 8px;
+    /* color: rgba(0, 0, 0, 0.84); */
+    /* background: #FFEA00; */
+    /* border-radius: 8px; */
+    transition: all .2s ease-in-out;
+    box-shadow: 0 2px 0 #2b2b2b;
 }
 
 /* 6. Post Feed
@@ -101,18 +102,19 @@
     width: 100%;
 }
 .card__title {
-    font-size: 1.45rem;
+    font-size: 1.48rem;
     font-weight: bold;
     margin: 0;
 }
 .card__title a {
     /* font-family: 'Avenir'; */
-    color: #1c2437;
+    /* font-weight: 900; */
+    color: rgba(0, 0, 0, 0.8);
 }
 .card__desc {
-    margin: 0.4rem 0 0.4em;
+    margin: 0.3rem 0 0.4em;
     line-height: 1.45;
-    font-size: 1.06rem;
+    font-size: 1.08rem;
 }
 .card__desc a {
     color: rgba(0, 0, 0, 0.6);
@@ -197,7 +199,7 @@
     /* box-sizing: border-box; */
 }
 .post__content h1 {
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.04rem;
     text-transform: uppercase;
 }
 .post__content a {

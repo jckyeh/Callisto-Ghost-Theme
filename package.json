@@ -1,6 +1,6 @@
 {
   "name": "callisto",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Minimal personal theme for writers, designers, and creatives",
   "main": "index.js",
   "scripts": {
