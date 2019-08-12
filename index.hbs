@@ -7,17 +7,6 @@ into the {body} of the default.hbs template --}}
     {{#foreach posts}}
     <article class="card" role="article">
 
-        <div class="card__content">
-            <header>
-                <h2 class="card__title"><a href="{{url}}">{{title}}</a></h2>
-            </header>
-            <div class="card__desc">
-                <a href="{{url}}">{{excerpt words="33"}}
-                </a>
-            </div>
-            <time class="date" datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>
-        </div>
-
         {{#if feature_image}}
         <div class="card__img-wrapper">
             <a href="{{url}}">
@@ -35,6 +24,17 @@ into the {body} of the default.hbs template --}}
             </a>
         </div>
         {{/if}}
+
+        <div class="card__content">
+            <header>
+                <h2 class="card__title"><a href="{{url}}">{{title}}</a></h2>
+            </header>
+            <div class="card__desc">
+                <a href="{{url}}">{{excerpt words="33"}}
+                </a>
+            </div>
+            <time class="date" datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>
+        </div>
 
     </article>
     {{/foreach}}
