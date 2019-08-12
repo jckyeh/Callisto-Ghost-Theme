@@ -63,6 +63,7 @@
     width: auto;
 }
 .header__link {
+    position: relative;
     margin-left: 2.1rem;
     font-family: 'Avenir', 'Open Sans', sans-serif;
     font-size: 1rem;
@@ -70,19 +71,30 @@
     padding: 0;
     color: rgba(0, 0, 0, 0.7);
     /* transition: background .2s ease-in-out; */
+    transition: color .4s ease-in-out;
+}
+
+.header__link:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    max-width: 0;
+    height: 1px;
+    background-color: currentColor;
+    transition: max-width .4s ease-in-out;
+}
+.header__link:hover:after {
+    max-width: 200px;
 }
 @media (max-width: 500px) {
     .header__link {
         margin-left: 1.2rem;
     }
 }
-
 .header__link:hover {
-    /* color: rgba(0, 0, 0, 0.84); */
-    /* background: #FFEA00; */
-    /* border-radius: 8px; */
-    transition: all .2s ease-in-out;
-    box-shadow: 0 1px 0 #2b2b2b;
+    color: rgba(0, 0, 0, 0.4);
 }
 
 /* 6. Post Feed
