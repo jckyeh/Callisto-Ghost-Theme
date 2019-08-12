@@ -341,6 +341,30 @@
     margin: 0 auto;
     max-width: 700px;
 }
+.footer__link-anchor {
+    display: flex;
+    flex-direction: column;
+}
+.footer__link-anchor:hover .footer__link-icon-left {
+    transform: translateX(-.5rem);
+}
+.footer__link-anchor:hover .footer__link-icon-right {
+    transform: translateX(.5rem);
+}
+.footer__link-icon-left {
+    position: relative;
+    left: -42px;
+    top: 22px;
+    height: 0;
+    transition: transform .2s ease-in-out;
+}
+.footer__link-icon-right {
+    position: relative;
+    right: -36px;
+    top: 22px;
+    height: 0;
+    transition: transform .2s ease-in-out;
+}
 .footer__link-label {
     font-family: 'Avenir', 'Open Sans', sans-serif;
     margin: 0;

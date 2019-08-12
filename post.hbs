@@ -40,7 +40,10 @@ into the {body} of the default.hbs template --}}
                 
                 <div class="footer__link-prev">
                 {{#prev_post in="primary_tag"}}
-                    <a href="{{url}}" rel="prev">
+                    <a class="footer__link-anchor" href="{{url}}" rel="prev">
+                        <object class="footer__link-icon-left">
+                            <embed src="{{asset "icons/arrow-left.svg"}}" />
+                        </object>
                         <p class="footer__link-label">Previous</p>
                         <h3 class="footer__title-article">{{title}}</h3>
                     </a>
@@ -49,7 +52,10 @@ into the {body} of the default.hbs template --}}
 
                 {{#next_post in="primary_tag"}}
                 <div class="footer__link-next">
-                    <a href="{{url}}" rel="next">
+                    <a class="footer__link-anchor" href="{{url}}" rel="next">
+                        <object class="footer__link-icon-right">
+                            <embed src="{{asset "icons/arrow-right.svg"}}" />
+                        </object>
                         <p class="footer__link-label">Next</p>
                         <h3 class="footer__title-article">{{title}}</h3>
                     </a>
