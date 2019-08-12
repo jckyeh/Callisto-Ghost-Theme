@@ -183,6 +183,10 @@
 }
 .card__hero-wrapper {
     margin: 0 0 1.5rem;
+    transition: all .4s ease-in-out;
+}
+.card__hero-wrapper:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,.2);
 }
 .card__hero-img {
     width: 100%;
